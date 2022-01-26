@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Landing-page.css">
+    <script src="https://kit.fontawesome.com/d5290b2793.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="header__home image">
+            <i class="fab fa-houzz"></i>
+        </a>
+        <div class="search">
+            <input type="search" name="search" value="Search Hotels" class="header__search">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="profile">
+            <i class="fas fa-scroll"></i>
+            <i class="far fa-comments"></i>
+            <img 
+                src="./Profile.jpeg" 
+                alt="profile" 
+                class="header__profile image"
+            />
+            <h4 class="header__profile-name">Carlos</h4>
+        </div>
+    </header>
+    
+    <section class="menu">
+        <div class="menu__section hotel">
+            <i class="fas fa-home"></i>
+            <p class="menu__section--name">HOTEL</p>
+        </div>
+        <div class="menu__section hotel">
+            <i class="fas fa-plane-departure"></i>
+            <p class="menu__section--name">FLIGHT</p>
+        </div>
+        <div class="menu__section hotel">
+            <i class="fas fa-key"></i>
+            <p class="menu__section--name">CAR RENTAL</p>
+        </div>
+        <div class="menu__section hotel">
+            <i class="far fa-map"></i>
+            <p class="menu__section--name">TOURS</p>
+        </div>
+    </section>
+    
+    <main class="container">
+        <section class="images">
+            <img 
+                src="https://img.interempresas.net/fotos/2026758.jpeg" 
+                alt="image" 
+                class="images__hotel"
+            />
+            <img 
+                src="https://p0.pikist.com/photos/46/1003/hotel-pool-evening-lighting-night-recovery-vacations-palm-trees-water.jpg" 
+                alt="image" 
+                class="images__hotel"
+            />
+            <img 
+                src="https://static.hosteltur.com/app/public/uploads/img/articles/2019/08/30/L_111158_w-barcelona.jpg" 
+                alt="image" 
+                class="images__hotel"
+            />
+        </section>
+
+        <section class="description">
+            <h1 class="hotel-name">HOTEL LA BAMBA DE ARECO</h1>
+            <div class="rating__stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <a 
+                    href="https://www.google.com/maps/place/San+Antonio+de+Areco,+Provincia+de+Buenos+Aires,+Argentina/@-34.2498717,-59.4796144,14z/data=!3m1!4b1!4m5!3m4!1s0x95bb9533fc84b0c1:0x33d6b6bd3a65b27f!8m2!3d-34.2436166!4d-59.4738665?hl=es" 
+                    class="location__gps"> San Antonio de Areco, Argentina 
+                </a>
+            </div>
+            <div class="rating">
+                <h2 class="rating-number">8.6</h2>
+                <h6 class="rating-votes">430 VOTES</h6>
+            </div>
+        </section>
+
+        <section class="recommendation">
+            <div class="recommendation__box">
+                <p class="recommendation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet cumque, repudiandae ea modi vel quod facilis sit rem. Est alias corporis facere quaerat aliquid ipsum voluptatum, et accusamus cumque! 
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ipsum reiciendis tempore fugit facilis beatae veritatis quas consequatur voluptatibus? Enim quos, voluptatibus magni vitae minus vel? Numquam cum possimus atque?
+                </p>
+                <ul class="amenities">
+                    <li class="amenities__list"> Close to the beach</li>
+                    <li class="amenities__list"> Breakfast included</li>
+                    <li class="amenities__list"> Free airport shuttle</li>
+                    <li class="amenities__list"> Free Wifi in all rooms</li>
+                    <li class="amenities__list"> Air conditioning and heating</li>
+                    <li class="amenities__list"> Pets allowed</li>
+                    <li class="amenities__list"> We speak all languages</li>
+                    <li class="amenities__list"> Perfect for families</li>
+                </ul>
+                <div class="recommendation__users">
+                    <p class="recommendation__users--comment">Lucy and 3 other friends recommend this hotel.</p>
+                    <div class="recommendation__users--photo">
+                        <div class="photo image"></div>
+                        <div class="photo image"></div>
+                        <div class="photo image"></div>
+                        <div class="photo image"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="reviewers">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="reviewer__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis perspiciatis necessitatibus voluptatibus aut corrupti, esse impedit delectus ad at laborum doloribus eveniet tenetur inventore fugiat? Adipisci doloremque nemo earum.
+                    </p>
+                    <div class="reviewer__profile">
+                        <div class="photo image"></div>
+                        <div class="personal-details">
+                            <p class="name">Tony Stark</p>
+                            <p class="date">Jan 25th 2022</p>
+                        </div>
+                        <h2 class="rating-number-profile">7.8</h2>
+                    </div>
+                </div>
+
+                <div class="reviewers">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="reviewer__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis perspiciatis necessitatibus voluptatibus aut corrupti, esse impedit delectus ad at laborum doloribus eveniet tenetur inventore fugiat? Adipisci doloremque nemo earum.
+                    </p>
+                    <div class="reviewer__profile">
+                        <div class="photo image file"></div>
+                        <div class="personal-details">
+                            <p class="name">Black Widow</p>
+                            <p class="date">Dec 24th 2021</p>
+                        </div>
+                        <h2 class="rating-number-profile">9.3</h2>
+                    </div>
+                </div>
+                <div class="all-reviews">
+                    <p>Show all</p>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer__message">GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</p>
+            <button class="button">BOOK NOW</button>
+        </footer>
+
+    </main>
+</body>
+</html>

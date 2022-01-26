@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+:root {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --left-distance: 20px;
+    --space-between: 260px;
+}
+
+body {
+    width: 100vw;
+    color: #808080;
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    padding: var(--left-distance);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__home {
+    background-color: #0000ff;
+    color: #d3d3d3;
+    text-align: center;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.search {
+    position: relative;
+    width: 40%;
+}
+
+.header__home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__search {
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    opacity: 0.2;
+    border: none;
+    width: 100%;
+}
+
+.fa-search {
+    position: absolute;
+    top: 18%;
+    transform: translateX(-200%);
+    opacity: 0.2;
+}
+
+.profile {
+    display: flex;
+    width: 18%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile >.fas {
+    margin-right: 40px;
+}
+
+.profile >:nth-child(2) {
+    margin-right: 40px;
+}
+
+.header__profile-name {
+    margin-left: 10px;
+}
+
+.menu {
+    height: calc(100vh - 80px);
+    width: 240px;
+    background-color: #2f4f4f;
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--left-distance);
+    padding-top: 30px;
+    float: left;
+}
+
+.menu__section {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    color: #fff;
+    padding-left: 10px;
+    align-items: center;    
+}
+
+.fa-home, .fa-plane-departure, .fa-key, .fa-map {
+    color: #fff;
+}
+
+.menu__section >.menu__section--name {
+    margin-left: var(--left-distance);
+}
+
+.container {
+    width: calc(100vw - 240px);
+    margin-left: 240px;
+    height: calc(100vh - 80px);
+    overflow: auto;
+} 
+
+.images {
+    display: flex;
+    /* position: absolute;
+    top: 80px; */
+}
+
+.images__hotel {
+    width: calc(100% / 3);
+    height: auto;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    /* position: absolute;
+    top: 310px; */
+    width: calc(100vw - 240px);
+    justify-content: space-between;
+}
+
+.hotel-name {
+    padding-left: var(--left-distance);
+    color: #d3d3d3;
+}
+
+.rating__stars {
+    margin-left: 3%;
+    color: #0000ff;
+}
+
+/* .location {
+    margin-left: 402px;
+} */
+
+.location__gps {
+    padding-left: 10px;
+}
+
+.rating {
+    background: #0000ff;
+    margin-left: 51px;
+    text-align: center;
+    color: #fff;
+    height: auto;
+    padding: 20px;
+    
+}
+
+.recommendation {
+    padding: 40px;
+    /* position: absolute;
+    top: 390px; */
+    width: calc(100vw - 240px);
+    background-color: #F4F4F4;
+    display: inline-flex;
+}
+
+.recommendation__box {
+    width: 55%;
+    background-color: #FFF;
+    padding: 30px;
+}
+
+.recommendation__description {
+    border-bottom: 1px solid #F4F4F4;
+    padding-bottom: var(--left-distance);
+}
+
+.amenities {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: var(--left-distance) 0 var(--left-distance) 10px;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.amenities__list {
+    width: 50%;
+    list-style-type: ">  ";
+    margin-top: 6px;
+}
+
+.recommendation__users {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--left-distance);
+}
+
+.recommendation__users--photo{
+    display: flex;
+}
+
+.recommendation__users--photo :first-child {
+    background-image: url("https://www.cinemascomics.com/wp-content/uploads/2021/10/world-war-hulk-marvel-studios-960x720.jpg.webp");
+}
+
+.recommendation__users--photo :nth-child(2) {
+    background-image: url("https://www.latercera.com/resizer/64rxcmfv2tVmLaPJvFlgrENEvjc=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/XYOJ6VYII5BSLK6RLP5TDNTSOU.jpg");
+}
+
+.recommendation__users--photo div:nth-child(3) {
+    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2021/05/vengadores-endgame-thor-2351945.jpg?itok=GkwpmOv6");
+}
+
+.recommendation__users--photo div:last-child {
+    background-image: url("https://elcomercio.pe/resizer/wEhvG3g8N0nQNIIgvNTjaTWD2zc=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/VBBQIT6CHZHPTJYVYF5YYFOCUE.jpg");
+}
+
+.photo {
+    margin-right: -10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reviews {
+    width: 40%;
+    margin-left: 50px;
+    position: relative;
+}
+
+.reviewers {
+    background-color: #FFF;
+    padding: 30px;
+}
+
+.reviewers i:first-child {
+    color: #F4F4F4;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    font-size: 3rem;
+    opacity: 0.6;
+}
+
+.reviewer__profile {
+    padding-top: var(--left-distance);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviewer__profile div:first-child {
+    background-image: url('https://i.blogs.es/2f39ac/ironman/1366_2000.jpg');
+}
+
+/* .personal-details {
+    margin: 0 200px 0 40px;
+} */
+
+.reviews >div:nth-child(2) {
+    position: relative;
+    margin-top: var(--left-distance);
+}
+
+.reviews .reviewers .reviewer__profile .file {
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/viuda-negra-pelicula-marvel-lucha-1563882796.jpg?resize=980:*');
+}
+
+.name {
+    color: #2f4f4f;
+    margin-bottom: 6px;
+}
+
+.rating-number-profile {
+    color: #0000ff;
+    font-weight: 100;
+}
+
+.all-reviews {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    color: #0000ff;
+    border-bottom: 1px solid #0000ff;
+    width: 10%;
+}
+
+.all-reviews > .fas {
+    margin: 8px 0 0 10px;
+}
+
+.footer {
+    /* position: absolute;
+    top: 920px; */
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 240px);
+    padding: 30px 0 30px;
+    color: #808080;
+}
+
+.button {
+  color: #fff;
+  background: linear-gradient(90deg, #e66465, #9198e5);
+  opacity: 0.78;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 15px;
+  padding: 14px 80px;
+}
